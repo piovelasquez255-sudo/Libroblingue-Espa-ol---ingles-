@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>NIcaragua un viaje de historia</title>
+    <script src="https://cdn.jsdelivr.net/npm/page-flip/dist/js/page-flip.browser.min.js"></script>
+    <style>
+        body {
+            margin: 0; background-color: #5c6266; font-family: "Georgia", serif;
+            display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px;
+        }
+        .flip-book { box-shadow: 0 0 20px rgba(0,0,0,0.5); margin: 0 auto; }
+        .page {
+            background-color: #fffdf8; border: 1px solid #d3c4a9; overflow: hidden;
+            padding: 30px; box-sizing: border-box; color: #3e3328;
+            box-shadow: inset -7px 0 30px -7px rgba(0,0,0,0.1); 
+        }
+        .page.--left { border-right: 0; box-shadow: inset -7px 0 30px -7px rgba(0,0,0,0.15); }
+        .page.--right { border-left: 0; box-shadow: inset 7px 0 30px -7px rgba(0,0,0,0.15); }
+        
+        .page.hardcover {
+            background: linear-gradient(135deg, #2b4c61, #1a2f3c); color: white;
+            border: 2px solid #0d181e; display: flex; flex-direction: column;
+            justify-content: center; align-items: center; text-align: center; padding: 30px;
+        }
+        .page.hardcover.--front { box-shadow: inset -5px 0 20px rgba(0,0,0,0.3); }
+        .page.hardcover.--back { box-shadow: inset 5px 0 20px rgba(0,0,0,0.3); }
+
+        .title-main { font-size: 2rem; margin-bottom: 10px; color: #0f0000; }
+        .subtitle { font-size: 1.2rem; font-style: italic; color: #000000; }
+        .scene-title { color: #000000; font-size: 1.1rem; border-bottom: 2px solid #e3d3b9; padding-bottom: 5px; margin-top: 0; margin-bottom: 10px;}
+        .esp { font-size: 0.9rem; line-height: 1.4; font-weight: bold; color: #222; text-align: justify; margin-bottom: 8px; }
+        .eng { font-size: 0.85rem; line-height: 1.4; font-style: italic; color: #555; text-align: justify; margin-bottom: 5px; }
+
+        .img-container {
+            width: 100%; height: 200px; background: #e0e0e0; display: flex;
+            justify-content: center; align-items: center; border-radius: 5px; margin-bottom: 10px;
+            overflow: hidden; border: 2px solid #ccc;
+        }
+        .img-container img { width: 100%; height: 100%; object-fit: cover; }
+        .page-number { position: absolute; bottom: 15px; font-size: 0.5rem; color: #999; }
+        .page.--left .page-number { left: 20px; }
+        .page.--right .page-number { right: 20px; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div id="book" class="flip-book">
+            
+             
+             <!-- PAG 1: PORTADA -->
+              <!-- PAG 1: PORTADA -->
+            <div class="page hardcover --front">
+               <!-- Capa 1: Imagen de fondo -->
+                <img src="imagenes/PORTADA.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;" alt="Portada">
+    
+             <!-- Capa 2: Textos por encima de la imagen -->
+             <div style="position: relative; z-index: 2; text-align: center;">
+             <h1 class="title-main">Nicaragua<br> un viaje de historia</h1>
+             <h2 class="subtitle">Nicaragua: A journey of stories </h2>
+             <div style="font-size: 4rem; margin-top: 30px;"></div>
+           </div>
+           <!--INICIO-->
+           <div class="page --right">
+             <img src="imagenes/INICIO.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;" alt="Contraportada">
+    
+            </div>
+
+            <!-- PAG 2: DEDICATORIA -->
+             
+            <div class="page" style="padding: 30px; box-sizing: border-box; background-color: #fffdf8; height: 100%;">
+            <h2 class="scene-title">DEDICATORIA</h2>
+            
+            <!-- Texto Español -->
+              <p style="margin-bottom: 15px; font-size: 0.70rem; line-height: 1.5; color: #333;">
+        
+             Dedicamos este libro a todos los niños y niñas, tanto de Nicaragua como de otros paises, que desean descubrir la riqueza de nuestra historia y cultura.
+             Que cada cuento sea una ventana hacia Nicaragua, que les permita conocer a sus personajes emblematicos,sus tradiciones y legado que forman parte de nuestra identidad nacional.
+             Deseamos que estas paginas despierten su imaginacion, fortalezcan su amor por la lectura y les enseñe que, a traves de las historias y los idiomas, podemos conocer,valorar y respetar las culturas de diferentes pueblos.
+             Con cariño, dedicamos este libro a las nuevas generaciones, para que descruban que cada cultura tiene una historia que contar y que conocerla es una forma de acercarnos, aprender y compartir.
+           </p>
+        
+           <!-- Texto Inglés -->
+           <p style="margin: 0; font-size: 0.70rem; line-height: 1.5; color: #555; font-style: italic;">
+             We dedicate this book to all children—in Nicaragua and beyond—who wish to discover the richness of our history and culture.
+             May each story serve as a window into Nicaragua, offering a glimpse of its iconic figures, traditions, and the legacy that shapes our national identity.
+             We hope these pages ignite your imagination, deepen your love for reading, and show you that through stories and languages, we can come to know, value, and respect the cultures of different peoples.
+             With affection, we dedicate this book to the new generations, so that they may discover that every culture has a story to tell—and that learning these stories is a way to bring us closer together, to learn, and to share.
+            </p>
+        
+           </div>
+
+                    <!-- PAG 3: ÍNDICE -->
+                 <div class="page --left">
+                 <h2 class="scene-title">Índice</h2>
+                 <ul class="esp" style="line-height: 1.8; font-size: 0.60rem; list-style: none; padding: 0;">
+        
+                 <!-- Personaje 1 -->
+                 <li><strong>📖 RUBÉN DARÍO (10 Escenas)</strong>
+                 <ul style="list-style: none; padding-left: 20px; margin-bottom: 10px;">
+                     <li>Historia 1: El pequeño Ruben (Pág. 1)</li>
+                     <li>Historia 2: El niño que amaba los libros (Pág. 2)</li>
+                     <li>Historia 3: Las palabras se convierten en poemas (Pág. 3)</li>
+                     <li>Historia 4: Un libro llamado "Azul" (Pág. 4)</li>
+                     <li>Historia 5: Ruben conocio a margarita (Pág. 5)</li>
+                     <li>Historia 6: Una princesa y una estrella (Pág. 6)</li>
+                     <li>Historia 7: El sueño de margarita (Pág. 7)</li>
+                     <li>Historia 8: Las palabras viajan por el mundo (Pág. 8)</li>
+                     <li>Historia 9: Un tesoro de nicaragua (Pág. 9)</li>
+                     <li>Historia 10: Lo que aprendemos de ruben (Pág. 10)</li>
+                 </ul>
+                  </li>
+        
+                 <!-- Personaje 2 -->
+                 <li><strong>⚔️ ANDRÉS CASTRO (5 Escenas)</strong>
+                  <ul style="list-style: none; padding-left: 20px; margin-bottom: 12px;">
+                     <li>Historia 1: Un niño de managua(Pág. 11)</li>
+                     <li>Historia 2: Un joven valiente (Pág. 12)</li>
+                     <li>Historia 3: San jacinto (Pág. 13)</li>
+                     <li>Historia 4: Una piedra y mucho valor (Pág. 14)</li>
+                     <li>Historia 5: Un heroe de nicaragua (Pág. 15)</li>
+                 </ul>
+                 </li>
+
+                 <!-- Personaje 3 -->
+                 <li><strong>🎓 MIGUEL LARREYNAGA (5 Escenas)</strong>
+                 <ul style="list-style: none; padding-left: 20px; margin-bottom: 12px;">
+                     <li>Historia 1: Un niño curioso (Pág. 16)</li>
+                     <li>Historia 2: Los libros de leon (Pág. 17)</li>
+                     <li>Historia 3: Un gran estudiante (Pág. 18)</li>
+                     <li>Historia 4: Un momento importante para centroamerica (Pág. 19)</li>
+                     <li>Historia 5: El poder de aprender (pag.20) {
+                        return this.;
+                     })</li>
+                 </ul>
+                 </li>
+
+                 <!-- Personaje 4 -->
+                 <li><strong>🕊️ AUGUSTO C. SANDINO (6 Escenas)</strong>
+                 <ul style="list-style: none; padding-left: 20px; margin-bottom: 12px;">
+                     <li>Historia 1: Un niño de Ninohomo (Pág. 21)</li>
+                     <li>Historia 2: Una idea en su corazon (Pág. 22)</li>
+                     <li>Historia 3: Un viaje que cambio sus ideas (Pág. 23)</li>
+                     <li>Historia 4: Regreso a Nicaragua (Pág. 24)</li>
+                     <li>Historia 5: Una palabra importante: SOBERANIA (Pág. 25)</li>
+                     <li>Historia 6: Un legado que permanece (Pág. 26)</li>
+                     <li>Bibliografia</li>
+                 </ul>
+                 </li>
+                  </ul>
+             </div>
+             <!--PAG 4: Inicio HISTORIA RUBEN -->
+            <div class="page --right" style="padding: 0 !important; overflow: hidden;">
+                 <img src="imagenes/ruben.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; margin: 0; padding: 0;" alt="Inicio Rubén">
+            </div>
+           
+            
+
+            <!-- ============================== RUBÉN DARÍO (10 Escenas) ============================== -->
+            <!-- PAG 5: RD Escena 1 -->
+            <div class="page --right">
+                <h2 class="scene-title">El pequeño Rubén</h2>
+                <div class="img-container"><img src="imagenes/ruben-01.jpg" alt="Escena 1"></div>
+                <p class="esp">En un pequeño pueblo de Nicaragua llamado Metapa, nació un niño llamado Félix Rubén García Sarmiento. Pero todos lo conocerían por otro nombre: Rubén Darío. Desde pequeño, Rubén tenía una gran curiosidad. Le gustaba escuchar historias, mirar las estrellas y descubrir nuevas palabras. Parecía que dentro de él había un pequeño mundo lleno de imaginación.</p>
+                <p class="eng">In a small town in Nicaragua called Metapa, a boy named Félix Rubén García Sarmiento was born. But everyone would know him by another name: Rubén Darío. From a very young age, Rubén was very curious. He liked listening to stories, looking at the stars, and discovering new words. It seemed that a little world full of imagination lived inside him.</p>
+                <div class="page-number">1</div>
+            </div>
+
+            <!-- PAG 6: RD Escena 2 -->
+            <div class="page --left">
+                <h2 class="scene-title">El niño que amaba los libros</h2>
+                <div class="img-container"><img src="imagenes/ruben-02.jpg" alt="Escena 2"></div>
+                <p class="esp">Rubén creció en la ciudad de León, junto a su familia. En casa encontró libros que despertaron su imaginación. Leía y leía. ¡Y había algo sorprendente! Rubén aprendió a leer cuando tenía solamente tres años. Las palabras de los libros parecían pequeñas puertas que lo llevaban a lugares maravillosos.</p>
+                <p class="eng">Rubén grew up in the city of León with his family. At home, he found books that filled his imagination. He read and read. And there was something amazing! Rubén learned to read when he was only three years old. The words in the books were like little doors that took him to wonderful places.</p>
+                <div class="page-number">2</div>
+            </div>
+
+            <!-- PAG 7: RD Escena 3 -->
+            <div class="page --right">
+                <h2 class="scene-title">Las palabras se convierten en poemas</h2>
+                <div class="img-container"><img src="imagenes/ruben-03.jpg" alt="Escena 3"></div>
+                <p class="esp">Cada libro le enseñaba algo nuevo. Rubén comenzó a descubrir que las palabras no solo servían para leer. También podían jugar, cantar y crear imágenes. Entonces empezó a escribir. Una palabra aquí. Otra palabra allá. Y poco a poco, sus palabras comenzaron a convertirse en poemas.</p>
+                <p class="eng">Every book taught him something new. Rubén began to discover that words were not only for reading. Words could also play, sing, and create pictures. So he began to write. One word here. Another word there. Little by little, his words became poems.</p>
+                <div class="page-number">3</div>
+            </div>
+
+            <!-- PAG 8: RD Escena 4 -->
+            <div class="page --left">
+                <h2 class="scene-title">Un libro llamado Azul...</h2>
+                <div class="img-container"><img src="imagenes/ruben-04.jpg" alt="Escena 4"></div>
+                <p class="esp">Cuando Rubén creció, siguió escribiendo. Un día publicó un libro llamado Azul... Sus páginas estaban llenas de imaginación, belleza y color. Rubén había descubierto algo especial: Las palabras también podían pintar. Y sus poemas comenzaron a viajar mucho más allá de Nicaragua.</p>
+                <p class="eng">When Rubén grew up, he continued writing. One day, he published a book called Azul... Its pages were full of imagination, beauty, and color. Rubén had discovered something special: Words could also paint. And his poems began to travel far beyond Nicaragua.</p>
+                <div class="page-number">4</div>
+            </div>
+
+            <!-- PAG 9: RD Escena 5 -->
+            <div class="page --right">
+                <h2 class="scene-title">Rubén conoce a Margarita</h2>
+                <div class="img-container"><img src="imagenes/ruben-05.jpg" alt="Escena 5"></div>
+                <p class="esp">Pasó el tiempo y Rubén continuó escribiendo cuentos y poemas. Un día conoció a una niña llamada Margarita. Margarita era curiosa y soñadora. —Rubén, ¿me cuentas un cuento? —le pidió. Rubén sonrió. Entonces tomó papel y comenzó a imaginar una historia maravillosa.</p>
+                <p class="eng">Time passed, and Rubén continued writing stories and poems. One day, he met a girl named Margarita. Margarita was curious and dreamed of wonderful things. “Rubén, can you tell me a story?” she asked. Rubén smiled. Then he took some paper and began to imagine a wonderful story.</p>
+                <div class="page-number">5</div>
+            </div>
+
+            <!-- PAG 10: RD Escena 6 -->
+            <div class="page --left">
+                <h2 class="scene-title">Una princesa y una estrella</h2>
+                <div class="img-container"><img src="imagenes/ruben-06.jpg" alt="Escena 6"></div>
+                <p class="esp">Rubén comenzó su cuento. Había una vez una pequeña princesa que vivía en un hermoso palacio. Una noche, la princesa miró al cielo y vio una estrella brillante. —¡Qué hermosa! —pensó. La estrella parecía llamarla desde muy lejos. La princesa soñó con tenerla cerca. Y así comenzó su aventura entre la luna y las estrellas.</p>
+                <p class="eng">Rubén began his story. Once upon a time, there was a little princess who lived in a beautiful palace. One night, the princess looked at the sky and saw a bright star. “How beautiful!” she thought. The star seemed to call her from far away. The princess dreamed of having it close to her. And so her adventure among the moon and the stars began.</p>
+                <div class="page-number">6</div>
+            </div>
+
+            <!-- PAG 11: RD Escena 7 -->
+            <div class="page --right">
+                <h2 class="scene-title">El sueño de Margarita</h2>
+                <div class="img-container"><img src="imagenes/ruben-07.jpg" alt="Escena 7"></div>
+                <p class="esp">La pequeña princesa quería guardar aquella estrella como un hermoso recuerdo. Su aventura la llevó a mirar más allá de lo que podía ver. Cuando regresó, llevaba consigo el brillo de la estrella. Rubén había creado un cuento donde los sueños, la imaginación y las estrellas podían encontrarse. Margarita había pedido un cuento. Y recibió algo aún más especial: un cuento hecho de palabras y sueños.</p>
+                <p class="eng">The little princess wanted to keep the star as a beautiful memory. Her adventure made her look beyond what she could see. When she returned, she carried the star's light with her. Rubén had created a story where dreams, imagination, and stars could meet. Margarita had asked for a story. And she received something even more special: a story made of words and dreams.</p>
+                <div class="page-number">7</div>
+            </div>
+
+            <!-- PAG 12: RD Escena 8 -->
+            <div class="page --left">
+                <h2 class="scene-title">Las palabras viajan por el mundo</h2>
+                <div class="img-container"><img src="imagenes/ruben-08.jpg" alt="Escena 8"></div>
+                <p class="esp">Los años pasaron. Rubén viajó por muchos lugares y sus palabras viajaron con él. Conoció otras ciudades y otras personas. Sus poemas fueron leídos en diferentes países. Pero, aunque estaba lejos, nunca olvidó la tierra donde había comenzado su historia: Nicaragua.</p>
+                <p class="eng">The years passed. Rubén traveled to many places, and his words traveled with him. He met new people and visited new cities. His poems were read in different countries. But even when he was far away, he never forgot the land where his story had begun: Nicaragua.</p>
+                <div class="page-number">8</div>
+            </div>
+
+            <!-- PAG 13: RD Escena 9 -->
+            <div class="page --right">
+                <h2 class="scene-title">Un tesoro de Nicaragua</h2>
+                <div class="img-container"><img src="imagenes/ruben-09.jpg" alt="Escena 9"></div>
+                <p class="esp">Rubén Darío nos dejó muchos cuentos y poemas. Con sus palabras hizo que los lectores imaginaran princesas, estrellas, jardines y mundos maravillosos. Pero también nos dejó algo muy importante: el orgullo de ser nicaragüense. Porque Rubén viajó por el mundo, pero siempre llevó a Nicaragua en sus palabras. Y las palabras de un niño que amaba leer se convirtieron en un tesoro para todos.</p>
+                <p class="eng">Rubén Darío left us many stories and poems. With his words, he helped readers imagine princesses, stars, gardens, and wonderful worlds. But he also left us something very important: the pride of being Nicaraguan. Rubén traveled around the world, but he always carried Nicaragua in his words. And the words of a boy who loved reading became a treasure for everyone.</p>
+                <div class="page-number">9</div>
+            </div>
+
+            <!-- PAG 14: RD Escena 10 (Cierre) -->
+            <div class="page --left">
+                <h2 class="scene-title">Lo que aprendemos de Rubén</h2>
+                <div class="img-container"><img src="imagenes/ruben-10.jpg" alt="Escena 10"></div>
+                <p class="esp">Rubén Darío nos enseña que leer, imaginar y crear puede convertir nuestros sueños en algo hermoso. Nunca dejemos de aprender. Nunca dejemos de imaginar. Y nunca olvidemos nuestras raíces.</p>
+                <p class="eng">Rubén Darío teaches us that reading, imagining, and creating can turn our dreams into something beautiful. Let us never stop learning. Let us never stop imagining. And let us never forget our roots.</p>
+                <div class="page-number">10</div>
+            </div>
+
+            <!--page 15: Inicio HISTORIA ANDRES -->
+            <div class="page --right" style="padding: 0 !important; overflow: hidden;">
+                 <img src="imagenes/andres.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; margin: 0; padding: 0;" alt="Inicio Rubén">
+            </div>
+
+            <!-- ============================== ANDRÉS CASTRO (5 Escenas) ============================== -->
+            <!-- PAG 16: AC Escena 1 -->
+            <div class="page --right">
+                <h2 class="scene-title">Un niño de Managua</h2>
+                <div class="img-container"><img src="imagenes/andres-01.jpg" alt="Escena 1"></div>
+                <p class="esp">Hace muchos años, en la Villa de Managua, nació un niño llamado Andrés Castro. Andrés creció en una familia campesina. Desde pequeño aprendió a trabajar, a cuidar la tierra y a valorar el esfuerzo. También le gustaba mucho la música y disfrutaba tocar la guitarra.</p>
+                <p class="eng">Many years ago, in the town of Managua, a boy named Andrés Castro was born. Andrés grew up in a farming family. From a young age, he learned to work, care for the land, and value effort. He also loved music and enjoyed playing the guitar.</p>
+                <div class="page-number">11</div>
+            </div>
+
+            <!-- PAG 17: AC Escena 2 -->
+            <div class="page --left">
+                <h2 class="scene-title">Un joven valiente</h2>
+                <div class="img-container"><img src="imagenes/andres-02.jpg" alt="Escena 2"></div>
+                <p class="esp">Cuando Andrés creció, decidió servir a su país. Se convirtió en soldado y aprendió a ser responsable, fuerte y valiente. Con el tiempo, su esfuerzo fue reconocido y llegó a ser sargento. Pero todavía no sabía que pronto viviría uno de los momentos más importantes de su vida.</p>
+                <p class="eng">When Andrés grew up, he decided to serve his country. He became a soldier and learned to be responsible, strong, and brave. Over time, his hard work was recognized, and he became a sergeant. But he did not know that one of the most important moments of his life was coming.</p>
+                <div class="page-number">12</div>
+            </div>
+
+            <!-- PAG 18: AC Escena 3 -->
+            <div class="page --right">
+                <h2 class="scene-title">San Jacinto</h2>
+                <div class="img-container"><img src="imagenes/andres-03.jpg" alt="Escena 3"></div>
+                <p class="esp">Era el año 1856. Andrés llegó a la Hacienda San Jacinto junto a otros hombres que iban a defender aquel lugar. Todos sabían que tenían una misión difícil. Andrés respiró profundamente. —Debemos ser valientes —pensó. Y junto a sus compañeros decidió hacer todo lo posible para proteger su tierra.</p>
+                <p class="eng">It was the year 1856. Andrés arrived at San Jacinto Farm with other men who came to defend the place. Everyone knew they had a difficult mission. Andrés took a deep breath. “We must be brave,” he thought. Together with his companions, he decided to do everything they could to protect their land.</p>
+                <div class="page-number">13</div>
+            </div>
+
+            <!-- PAG 19: AC Escena 4 -->
+            <div class="page --left">
+                <h2 class="scene-title">Una piedra y mucho valor</h2>
+                <div class="img-container"><img src="imagenes/andres-04.jpg" alt="Escena 4"></div>
+                <p class="esp">Durante la batalla, Andrés se encontró en un momento muy difícil. Su arma ya no podía ayudarlo. Pero Andrés no se rindió. Vio una piedra cerca de él y, con mucha valentía, la utilizó para detener a un enemigo que intentaba entrar. Aquel momento quedó en la memoria de Nicaragua como un ejemplo de valor.</p>
+                <p class="eng">During the battle, Andrés found himself in a difficult moment. His weapon could no longer help him. But Andrés did not give up. He saw a stone near him and, with great courage, used it to stop an enemy who was trying to enter. That moment remained in Nicaragua's memory as an example of courage.</p>
+                <div class="page-number">14</div>
+            </div>
+
+            <!-- PAG 20: AC Escena 5 -->
+            <div class="page --right">
+                <h2 class="scene-title">Un héroe de Nicaragua</h2>
+                <div class="img-container"><img src="imagenes/andres-05.jpg" alt="Escena 5"></div>
+                <p class="esp">Andrés Castro continuó viviendo en Nicaragua y formó una familia. Con el paso de los años, los nicaragüenses siguieron recordando su valentía. En 1982, fue declarado Héroe Nacional de Nicaragua. Su historia nos recuerda que ser valiente también significa hacer lo correcto cuando tenemos miedo.</p>
+                <p class="eng">Andrés Castro continued living in Nicaragua and started a family. As the years passed, Nicaraguans continued to remember his courage. In 1982, he was declared a National Hero of Nicaragua. His story reminds us that being brave also means doing the right thing when we are afraid.</p>
+                <div class="page-number">15</div>
+            </div>
+            <!--pag 21: Inicio HISTORIA MIGUEL -->
+            <div class="page --right" style="padding: 0 !important; overflow: hidden;">
+                 <img src="imagenes/miguel.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; margin: 0; padding: 0;" alt="Inicio Rubén">
+            </div>
+
+            <!-- ============================== MIGUEL LARREYNAGA (5 Escenas) ============================== -->
+            <!-- PAG 22: ML Escena 1 -->
+            <div class="page --left">
+                <h2 class="scene-title">Un niño curioso</h2>
+                <div class="img-container"><img src="imagenes/miguel-01.jpg" alt="Escena 1"></div>
+                <p class="esp">Hace muchos años, en Telica, Nicaragua, nació un niño llamado Miguel Larreynaga. Miguel perdió a sus padres cuando era pequeño. Su abuelo se encargó de cuidarlo y de ayudarlo a continuar sus estudios. Desde niño, Miguel descubrió que aprender podía abrir muchas puertas.</p>
+                <p class="eng">Many years ago, in Telica, Nicaragua, a boy named Miguel Larreynaga was born. Miguel lost his parents when he was very young. His grandfather took care of him and helped him continue his studies. As a child, Miguel discovered that learning could open many doors.</p>
+                <div class="page-number">16</div>
+            </div>
+
+            <!-- PAG 23: ML Escena 2 -->
+            <div class="page --right">
+                <h2 class="scene-title">Los libros de León</h2>
+                <div class="img-container"><img src="imagenes/miguel-02.jpg" alt="Escena 2"></div>
+                <p class="esp">Miguel viajó a León para continuar sus estudios. Allí aprendió muchas cosas. Estudió filosofía, retórica y otras materias. Cada libro era una nueva oportunidad para descubrir algo. Miguel estudiaba con entusiasmo porque sabía que el conocimiento podía ayudar a las personas.</p>
+                <p class="eng">Miguel traveled to León to continue his studies. There, he learned many things. He studied Philosophy, Rhetoric, and other subjects. Every book was a new opportunity to discover something. Miguel studied with enthusiasm because he knew that knowledge could help people.</p>
+                <div class="page-number">17</div>
+            </div>
+
+            <!-- PAG 24: ML Escena 3 -->
+            <div class="page --left">
+                <h2 class="scene-title">Un gran estudiante</h2>
+                <div class="img-container"><img src="imagenes/miguel-03.jpg" alt="Escena 3"></div>
+                <p class="esp">Miguel siguió estudiando y llegó hasta la Universidad de San Carlos de Guatemala. Allí obtuvo su título de abogado. También aprendió sobre derecho, filosofía y otras áreas del conocimiento. Aquel niño curioso se había convertido en un hombre preparado y dedicado al aprendizaje.</p>
+                <p class="eng">Miguel continued studying and went to the University of San Carlos in Guatemala. There, he earned his law degree. He also studied Law, Philosophy, and other areas of knowledge. That curious boy had become a well-educated man who loved learning.</p>
+                <div class="page-number">18</div>
+            </div>
+
+            <!-- PAG 25: ML Escena 4 -->
+            <div class="page --right">
+                <h2 class="scene-title">Un momento importante</h2>
+                <div class="img-container"><img src="imagenes/miguel-04.jpg" alt="Escena 4"></div>
+                <p class="esp">En 1821, Miguel se encontraba en Guatemala. Allí participó en las discusiones relacionadas con la independencia de Centroamérica. Era un momento muy importante. Miguel sabía que estaba viviendo una parte de la historia. Su nombre quedaría unido para siempre a aquel acontecimiento.</p>
+                <p class="eng">In 1821, Miguel was in Guatemala. There, he took part in discussions related to the independence of Central America. It was a very important moment. Miguel knew that he was living through history. His name would always be connected to that important event.</p>
+                <div class="page-number">19</div>
+            </div>
+
+            <!-- PAG 26: ML Escena 5 -->
+            <div class="page --left">
+                <h2 class="scene-title">El poder de aprender</h2>
+                <div class="img-container"><img src="imagenes/miguel-05.jpg" alt="Escena 5"></div>
+                <p class="esp">Miguel continuó enseñando y trabajando durante muchos años. Fue abogado, profesor y servidor público. Su vida nos dejó una gran enseñanza: Estudiar nos ayuda a comprender el mundo y a construir un mejor futuro. Por eso, Miguel Larreynaga sigue siendo recordado en Nicaragua.</p>
+                <p class="eng">Miguel continued teaching and working for many years. He was a lawyer, teacher, and public servant. His life left an important lesson: Studying helps us understand the world and build a better future. That is why Miguel Larreynaga is still remembered in Nicaragua.</p>
+                <div class="page-number">20</div>
+            </div>
+            <!-- pag 27: Inicio HISTORIA SANDINO -->
+            <div class="page --right" style="padding: 0 !important; overflow: hidden;">
+                 <img src="imagenes/sandino.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; margin: 0; padding: 0;" alt="Inicio Rubén">
+            </div>
+
+            <!-- PAG 28: Sandino Escena 1 -->
+            <div class="page --right">
+                <h2 class="scene-title">Un niño de Niquinohomo</h2>
+                <div class="img-container"><img src="imagenes/sandino-01 .jpg .jpg" alt="Escena 1"></div>
+                <p class="esp">En un pueblo llamado Niquinohomo, en Nicaragua, nació un niño llamado Augusto Nicolás Calderón Sandino. Desde pequeño conoció el trabajo del campo. Su mamá recogía café y su papá trabajaba en la producción de café. Sandino aprendió desde niño que el trabajo y el esfuerzo eran importantes.</p>
+                <p class="eng">In a town called Niquinohomo, in Nicaragua, a boy named Augusto Nicolás Calderón Sandino was born. From a young age, he knew farm work. His mother picked coffee, and his father worked in coffee production. Sandino learned that work and effort were important.</p>
+                <div class="page-number">21</div>
+            </div>
+
+            <!-- PAG 29: Sandino Escena 2 -->
+            <div class="page --left">
+                <h2 class="scene-title">Una idea en su corazón</h2>
+                <div class="img-container"><img src="imagenes/sandino-02.jpg" alt="Escena 2"></div>
+                <p class="esp">Cuando Sandino era joven, vivió momentos difíciles en Nicaragua. También conoció la historia de hombres que defendieron su país. Uno de ellos fue Benjamín Zeledón. Aquella experiencia dejó una profunda impresión en Sandino. Desde entonces, comenzó a pensar mucho en Nicaragua y en la defensa de su patria.</p>
+                <p class="eng">When Sandino was young, Nicaragua experienced difficult times. He also learned about people who defended their country. One of them was Benjamín Zeledón. That experience deeply affected Sandino. From then on, he thought a lot about Nicaragua and the defense of his homeland.</p>
+                <div class="page-number">22</div>
+            </div>
+
+            <!-- PAG 30: Sandino Escena 3 -->
+            <div class="page --right">
+                <h2 class="scene-title">Un viaje que cambió sus ideas</h2>
+                <div class="img-container"><img src="imagenes/sandino-03.jpg" alt="Escena 3"></div>
+                <p class="esp">Sandino salió de Nicaragua y viajó por varios países. Vivió y trabajó en Honduras, Guatemala y México. Durante esos viajes conoció nuevas personas e ideas. Pero, aunque estaba lejos, siempre pensaba en Nicaragua.</p>
+                <p class="eng">Sandino left Nicaragua and traveled to different countries. He lived and worked in Honduras, Guatemala, and Mexico. During his travels, he met new people and learned new ideas. But even when he was far away, he always thought about Nicaragua.</p>
+                <div class="page-number">23</div>
+            </div>
+
+            <!-- PAG 31: Sandino Escena 4 -->
+            <div class="page --left">
+                <h2 class="scene-title">Regreso a Nicaragua</h2>
+                <div class="img-container"><img src="imagenes/sandino-04.jpg" alt="Escena 4"></div>
+                <p class="esp">En 1926, Sandino regresó a Nicaragua. Encontró un país lleno de problemas y decidió participar en la lucha que se estaba librando. Con otros hombres comenzó a organizarse. Su propósito era defender lo que él consideraba la soberanía de Nicaragua.</p>
+                <p class="eng">In 1926, Sandino returned to Nicaragua. He found a country facing many problems and decided to take part in the struggle that was happening. He organized with other men. His purpose was to defend what he believed was Nicaragua's sovereignty.</p>
+                <div class="page-number">24</div>
+            </div>
+
+            <!-- PAG 32: Sandino Escena 5 -->
+            <div class="page --right">
+                <h2 class="scene-title">Soberanía</h2>
+                <div class="img-container"><img src="imagenes/sandino-05.jpg" alt="Escena 5"></div>
+                <p class="esp">Para Sandino, había una palabra muy importante: soberanía. Él quería que Nicaragua pudiera decidir su propio camino. Durante varios años defendió sus ideas y escribió mensajes para explicar lo que pensaba. Su nombre comenzó a ser conocido en diferentes lugares.</p>
+                <p class="eng">For Sandino, there was one very important word: sovereignty. He wanted Nicaragua to be able to choose its own path. For many years, he defended his ideas and wrote messages to explain what he believed. His name became known in different places.</p>
+                <div class="page-number">25</div>
+            </div>
+
+            <!-- PAG 33: Sandino Escena 6 -->
+            <div class="page --left">
+                <h2 class="scene-title">Un legado que permanece</h2>
+                <div class="img-container"><img src="imagenes/sandino-06.jpg" alt="Escena 6"></div>
+                <p class="esp">La vida de Sandino terminó en 1934, pero su nombre continuó siendo recordado. Para muchos nicaragüenses, su figura representa la defensa de la soberanía, la dignidad y el amor por Nicaragua. Por eso recibió un nombre que quedó en la memoria del país: “General de Hombres y Mujeres Libres”</p>
+                <p class="eng">Sandino's life ended in 1934, but his name continued to be remembered. For many Nicaraguans, his figure represents the defense of sovereignty, dignity, and love for Nicaragua. That is why he became known by a name remembered in the country: “General of Free Men and Women”</p>
+                <div class="page-number">26</div>
+            </div>
+            <!--PAG 34:bibliografias-->
+             <div class="page --right">
+             <img src="imagenes/bibliografia .jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;" alt="">
+            </div>
+            <!-- PAG 35: Interior Contraportada -->
+            <div class="page --right" style="background-color: white; padding: 40px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; height: 100%;">
+    
+            <!-- CONTENEDOR CENTRAL -->
+              <div style="width: 100%;">
+        
+            <!-- 1. TEXTO-01 -->
+           <div style="text-align: center; margin-bottom: 30px; font-size: 0.85rem; line-height: 1.5;">
+              <p style="margin-bottom: 10px; color: #333;">Descubre las historias de Rubén Darío, Andrés Castro, Miguel Larreynaga y Augusto C. Sandino. Cuatro grandes nicaragüenses que, con sus sueños, valentía y talento, hicieron un mejor país. ¡Sus historias también son tuyas!</p>
+            
+             <p style="margin: 0; color: #555; font-style: italic;">Discover the stories of Rubén Darío, Andrés Castro, Miguel Larreynaga, and Augusto C. Sandino. Four great Nicaraguans who, with their dreams, courage, and talent, made a better country. Their stories are also yours!</p>
+           </div>
+
+        <!-- 2. CRÉDITOS -->
+        <div style="display: flex; justify-content: space-between; align-items: stretch; font-size: 0.8rem; line-height: 1.5;">
+            
+            <!-- Español -->
+            <div style="width: 46%; text-align: left; color: #333;">
+                <p style="margin: 0;">Esta obra fue escrita y diseñada por [CARMEN YUNIELKA AGUIRRE HERNADEZ], [MARTHA MERCEDES MORALES GONZALEZ] y [JOSUE DAVID CERDA VELASQUEZ], con el propósito de acercar la historia de Nicaragua a las nuevas generaciones.</p>
+            </div>
+            
+            <!-- LÍNEA -->
+            <div style="width: 1px; background-color: #ccc; margin: 0 15px;"></div>
+            
+            <!-- Inglés -->
+            <div style="width: 46%; text-align: left; color: #555; font-style: italic;">
+                <p style="margin: 0;">This work was written and designed by ,[CARMEN YUNIELKA AGUIRRE HERNADEZ], [MARTHA MERCEDES MORALES GONZALEZ] y [JOSUE DAVID CERDA VELASQUEZ], with the purpose of bringing Nicaragua's history closer to new generations.</p>
+            </div>
+            
+        </div>
+        
+    </div>
+</div>
+        
+    </div>
+
+
+            <!--PAG 36:CONTRAPORTADA -->
+   <div class="page hardcover --back">
+     <img src="imagenes/contra portada .jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;" alt="Contraportada">
+    
+    
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const pageFlip = new St.PageFlip(document.getElementById('book'), {
+                width: 450, height: 650, size: "fixed",
+                minWidth: 300, maxWidth: 500, minHeight: 400, maxHeight: 700,
+                showCover: true, useMouseEvents: true, drawShadow: true, flippingTime: 800
+            });
+            pageFlip.loadFromHTML(document.querySelectorAll('.page'));
+        });
+    </script>
+</body>
+</html>
